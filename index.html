@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Should Pet Grooming Plans Change as a Pet Ages? | Rialto Grooming</title>
+  <meta name="description" content="Discover why pet grooming plans should change as a pet ages. Learn how young, adult, and senior pets need different grooming routines for comfort and care.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & ROOT ===== */
+    :root {
+      --black: #000000;
+      --near-black: #0a0a0a;
+      --dark: #111111;
+      --card: #ffffff;
+      --gold: #D4AF37;
+      --gold-dark: #b8952e;
+      --gold-light: #e8c85a;
+      --text-dark: #1a1a1a;
+      --text-mid: #444444;
+      --text-light: #f5f5f5;
+      --border: #e8e8e8;
+      --font: 'Montserrat', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--black);
+      color: var(--text-light);
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+      padding: 10px 0;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      padding: 6px 18px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+
+    .logo-wrap:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .logo-wrap img {
+      height: 40px;
+      display: block;
+    }
+
+    .logo-text {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0a0a0a;
+      letter-spacing: -0.4px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 24px;
+      border-radius: 50px;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 13.5px;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      line-height: 1.4;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #000000;
+      border-color: var(--gold);
+    }
+
+    .btn-gold:hover {
+      background: #000000;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #000000;
+      border-color: var(--gold);
+    }
+
+    /* ===== MAIN WRAP ===== */
+    .main-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 90px;
+    }
+
+    /* ===== ARTICLE CARD ===== */
+    .blog-article {
+      background: var(--card);
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(212, 175, 55, 0.12);
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .article-header {
+      background: linear-gradient(145deg, #050505 0%, #1a1a1a 55%, #0d0d0d 100%);
+      padding: 55px 60px 50px;
+      border-bottom: 4px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-header::before {
+      content: '';
+      position: absolute;
+      top: -60%;
+      right: -15%;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.12), transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .article-header::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: -10%;
+      width: 340px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.08), transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .article-badge {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold);
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      padding: 7px 18px;
+      border-radius: 50px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .article-header h1 {
+      font-size: clamp(1.7rem, 3.6vw, 2.65rem);
+      font-weight: 900;
+      line-height: 1.22;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      background: linear-gradient(135deg, #ffffff 0%, var(--gold-light) 45%, #ffffff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .article-content {
+      padding: 55px 60px 65px;
+      color: var(--text-dark);
+    }
+
+    /* ===== ARTICLE TYPOGRAPHY ===== */
+    .article-content h2 {
+      font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+      font-weight: 800;
+      color: #0a0a0a;
+      margin: 48px 0 18px;
+      padding-left: 20px;
+      border-left: 5px solid var(--gold);
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+    }
+
+    .article-content h2:first-of-type {
+      margin-top: 10px;
+    }
+
+    .article-content h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #0a0a0a;
+      margin: 30px 0 8px;
+      line-height: 1.4;
+    }
+
+    .article-content p {
+      font-size: 1.02rem;
+      color: #333333;
+      margin-bottom: 20px;
+      line-height: 1.88;
+      font-weight: 400;
+    }
+
+    .article-content strong {
+      color: #0a0a0a;
+      font-weight: 700;
+    }
+
+    .article-content a {
+      color: var(--gold-dark);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.45);
+      transition: all 0.25s ease;
+    }
+
+    .article-content a:hover {
+      color: #000000;
+      border-bottom-color: var(--gold);
+    }
+
+    /* ===== FAQ ===== */
+    .faq-item {
+      background: #fafafa;
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--gold);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.09);
+    }
+
+    .faq-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #0a0a0a;
+      font-size: 1.05rem;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      color: #4a4a4a;
+    }
+
+    /* ===== BUSINESS SECTION ===== */
+    .business-section {
+      margin-top: 70px;
+    }
+
+    .business-section-title {
+      text-align: center;
+      font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 32px;
+      letter-spacing: -0.3px;
+    }
+
+    .business-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .info-card {
+      background: var(--card);
+      color: var(--text-dark);
+      border-radius: 22px;
+      padding: 42px 38px;
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .info-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+    }
+
+    .info-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0a0a0a;
+      margin-bottom: 22px;
+      letter-spacing: -0.2px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .info-item:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .info-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      color: #000;
+      font-weight: 800;
+    }
+
+    .info-item a {
+      color: var(--gold-dark);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    .info-item a:hover {
+      color: #000;
+    }
+
+    .map-card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 8px;
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .map-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+      z-index: 2;
+    }
+
+    .map-card iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      border-radius: 16px;
+      border: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #050505;
+      border-top: 1px solid rgba(212, 175, 55, 0.18);
+      padding: 55px 24px 32px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      background: #ffffff;
+      padding: 8px 20px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+    }
+
+    .footer-logo img {
+      height: 38px;
+      display: block;
+    }
+
+    .footer-text {
+      color: #888;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .footer-text a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.25s ease;
+    }
+
+    .footer-text a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 24px auto;
+      border-radius: 4px;
+    }
+
+    .footer-copy {
+      color: #555;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .business-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .map-card iframe {
+        min-height: 340px;
+      }
+
+      .article-header {
+        padding: 45px 40px 40px;
+      }
+
+      .article-content {
+        padding: 45px 40px 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .header-actions {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .btn {
+        padding: 10px 18px;
+        font-size: 12.5px;
+      }
+
+      .article-header {
+        padding: 38px 26px 34px;
+      }
+
+      .article-content {
+        padding: 38px 26px 44px;
+      }
+
+      .article-content h2 {
+        padding-left: 14px;
+        border-left-width: 4px;
+      }
+
+      .article-content p {
+        font-size: 0.96rem;
+      }
+
+      .faq-item {
+        padding: 20px 22px;
+      }
+
+      .info-card {
+        padding: 34px 28px;
+      }
+
+      .main-wrap {
+        padding: 0 16px 70px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-wrap img {
+        height: 32px;
+      }
+
+      .logo-text {
+        font-size: 0.95rem;
+      }
+
+      .article-header h1 {
+        font-size: 1.45rem;
+      }
+
+      .article-content h2 {
+        font-size: 1.15rem;
+      }
+
+      .article-content p {
+        font-size: 0.93rem;
+      }
+
+      .map-card iframe {
+        min-height: 280px;
+      }
+
+      .header-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .header-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://www.rialtogrooming.com/" class="logo-wrap">
+        <img src="https://www.rialtogrooming.com/assets/logo-B3O563xG.webp" alt="Rialto Grooming">
+        <span class="logo-text">Rialto Grooming</span>
+      </a>
+      <div class="header-actions">
+        <a href="tel:+19097675861" class="btn btn-outline">Call (909) 767-5861</a>
+        <a href="https://www.rialtogrooming.com/" class="btn btn-gold">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main-wrap">
+
+    <!-- ===== ARTICLE ===== -->
+    <article class="blog-article">
+
+      <!-- Article Header -->
+      <header class="article-header">
+        <span class="article-badge">Pet Care Guide</span>
+        <h1>Why Should Pet Grooming Plans Change as a Pet Ages?</h1>
+      </header>
+
+      <!-- Article Content -->
+      <div class="article-content">
+
+        <p>A pet’s grooming needs do not stay the same throughout life. Puppies and young pets may need basic care while older pets often need gentler and more careful routines. Changes in coat texture, skin health, movement, and behavior can affect how often grooming should happen. For this reason, owners should review their pet care routine as their companion grows older. Choosing proper <strong><a href="https://maps.app.goo.gl/8xRa6MDiW9e7ifgQA" target="_blank" rel="noopener">Pet Grooming in Rialto CA</a></strong> can help owners maintain comfort and hygiene at every stage of life.</p>
+
+        <p>Age can affect nearly every part of a grooming routine. An older pet may develop dry skin or thinner fur. Their nails may grow differently because they move less than before. They may also become less comfortable standing for long periods. These changes mean that grooming should focus more on comfort and safety. A thoughtful approach can help older pets stay clean without creating extra stress.</p>
+
+        <h2>Young Pets Have Different Grooming Needs</h2>
+
+        <p>Young pets often have more energy and better mobility during grooming sessions. Puppies may need time to become familiar with bathing, brushing, nail care, and table handling. Early grooming experiences can shape how a pet reacts to future visits.</p>
+
+        <p>A young dog may also have a coat that is still changing. Some breeds develop their mature coat as they grow. Because of this, grooming routines may need adjustments as the coat becomes thicker or longer. Regular grooming can help prevent tangles while teaching the pet to remain calm during care.</p>
+
+        <p>Young pets may also need shorter sessions. Long grooming appointments can make them restless. Gentle handling and simple routines can help create a better experience. As they mature, their grooming needs can become more detailed.</p>
+
+        <h2>Adult Pets Often Need More Regular Maintenance</h2>
+
+        <p>Adult pets usually have established coats and stable grooming patterns. During this stage, owners can often follow a consistent schedule based on breed and lifestyle. Dogs that spend more time outdoors may need more frequent cleaning. Indoor pets may require less frequent bathing while still needing regular brushing and nail care.</p>
+
+        <p>This is often the stage when a complete routine becomes important. A <strong>Full Groom Package</strong> may include bathing, brushing, trimming, ear care, and nail maintenance. These services can help keep the coat clean and reduce buildup around sensitive areas.</p>
+
+        <p>Adult dogs may also produce more shedding during certain seasons. Regular grooming can help remove loose fur and keep the coat manageable. Maintaining a routine during adulthood may also make later grooming easier when age related changes appear.</p>
+
+        <h2>Senior Pets Need More Gentle Grooming</h2>
+
+        <p>Senior pets often require a slower and softer grooming approach. Their bodies may become less flexible over time. Standing for an extended period can become uncomfortable. Some older pets may also become more sensitive to touch around their joints, back, paws, or ears.</p>
+
+        <p>Groomers may need to use shorter sessions and allow more rest. Gentle handling can reduce unnecessary pressure. Older pets may also benefit from more frequent grooming because they may have trouble cleaning certain parts of their body on their own.</p>
+
+        <p><strong>Pet Grooming</strong> for senior animals should focus on cleanliness while protecting comfort. Heavy brushing or rough handling may irritate sensitive skin. A calm environment can also help older pets feel more secure during their appointment.</p>
+
+        <h2>Coat Changes Can Affect Grooming Frequency</h2>
+
+        <p>Aging can change the way a pet’s coat looks and feels. Some pets develop drier skin as they grow older. Others may experience thinning fur or changes in coat density. These differences can affect the type of brush and grooming method that works best.</p>
+
+        <p>A coat that once needed frequent trimming may require a different approach later in life. Long fur can become harder to manage when an older pet has less ability to move or groom itself. Mats can also place pressure on the skin and create discomfort.</p>
+
+        <p>Owners should watch for sudden coat changes. Excessive dryness, unusual shedding, redness, or visible irritation can deserve closer attention. Grooming appointments may help owners notice these changes earlier and discuss them with a veterinarian when needed.</p>
+
+        <h2>Nail Care Becomes More Important With Age</h2>
+
+        <p>Nail care can become increasingly important as pets grow older. Senior dogs may spend less time running or walking on hard surfaces. As a result, their nails may not wear down naturally as much as they did during younger years.</p>
+
+        <p>Overgrown nails can affect the way a pet walks. They may also create pressure on the toes and feet. Regular <strong>Pet Nail Trimming</strong> can help maintain proper nail length and reduce discomfort.</p>
+
+        <p>Older pets may also have less tolerance for handling around their paws. Gentle nail trimming with regular breaks may create a more comfortable session. Owners should avoid waiting until nails become very long because longer nails can make the process harder for the pet.</p>
+
+        <h2>Grooming Sessions May Need More Rest Breaks</h2>
+
+        <p>Age can change how long a pet can comfortably remain in one position. A senior dog may become tired while standing. Some pets may also need extra time when moving from one grooming step to another.</p>
+
+        <p>Professional <strong><a href="https://www.rialtogrooming.com/" target="_blank" rel="noopener">Dog Grooming Services</a></strong> can be adjusted based on a pet’s condition and behavior. A groomer may divide the session into manageable stages. This can make the appointment less tiring while still covering important grooming needs.</p>
+
+        <p>Rest breaks can also lower stress. Older pets may appreciate a quieter setting with less rushing. Patience becomes especially important when a pet has become slower or more cautious with age.</p>
+
+        <h2>Skin Sensitivity Can Increase Over Time</h2>
+
+        <p>Older pets can develop skin that is more delicate than it was during adulthood. Natural oil production may change. The skin may also become more sensitive to brushing or bathing.</p>
+
+        <p>Because of this, grooming products and techniques may need to change. Harsh products can cause dryness or irritation. Strong brushing may also be uncomfortable when the skin becomes thinner.</p>
+
+        <p>A careful grooming plan should consider the pet’s current skin condition. Regular cleaning can support good hygiene while gentle methods help protect comfort. Owners should also pay attention to signs such as persistent itching or irritation and seek veterinary guidance when those signs continue.</p>
+
+        <h2>Mobility Problems Can Change The Entire Routine</h2>
+
+        <p>Mobility changes are common in aging pets and can affect nearly every grooming step. A senior dog with stiff joints may struggle to stand on a grooming table. A pet with reduced balance may also feel nervous during movement.</p>
+
+        <p>Grooming plans should account for these limitations. A groomer may need to use supportive handling and reduce the amount of time the pet spends standing. Extra care can also be useful during bathing and drying.</p>
+
+        <p>A <strong>Tidy-Up Dog Grooming</strong> session may sometimes be more suitable than a major style change for an older dog. Simple trimming around the face, paws, and sanitary areas can improve cleanliness without requiring a long appointment.</p>
+
+        <h2>Behavior Changes Should Also Be Considered</h2>
+
+        <p>Some older pets become more sensitive to sounds, touch, or unfamiliar environments. A pet that once enjoyed grooming may become nervous as it ages. Changes in hearing or vision can also make normal grooming activities feel unexpected.</p>
+
+        <p>Owners should share important behavior changes with the groomer before an appointment. This information can help the grooming team adjust their handling style.</p>
+
+        <p>A familiar routine may also help. Keeping appointments consistent can reduce uncertainty. Gentle communication and slower movements can support a calmer experience. Grooming should always consider both the physical and emotional comfort of an aging pet.</p>
+
+        <h2>FAQs About Grooming Aging Pets</h2>
+
+        <div class="faq-item">
+          <h3>How often should a senior pet be groomed?</h3>
+          <p>The ideal schedule depends on breed, coat type, skin condition, and daily activity. Many senior pets benefit from regular appointments because they may need help maintaining areas they cannot clean easily.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should grooming sessions be shorter for older pets?</h3>
+          <p>Shorter sessions may be helpful when a pet becomes tired or uncomfortable while standing. Breaks can make the process easier and reduce physical strain.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can older dogs still receive full grooming services?</h3>
+          <p>Yes. However, the routine may need adjustment based on the dog’s mobility, coat condition, and comfort level. Groomers can often modify techniques while still providing needed care.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does nail trimming become more important for senior pets?</h3>
+          <p>Older dogs may exercise less and therefore wear down their nails less naturally. Longer nails can affect walking and create pressure around the feet.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should owners do when an older pet becomes anxious during grooming?</h3>
+          <p>Owners should explain the behavior change to the groomer before the appointment. A quieter setting, slower handling, and shorter sessions may help reduce stress.</p>
+        </div>
+
+        <h2>Conclusion</h2>
+
+        <p>Grooming plans should change because a pet’s body, coat, mobility, and behavior can change with age. Young pets may need basic care and training. Adult pets often need steady maintenance. Senior pets may need shorter sessions, gentler handling, careful nail care, and more attention to skin and comfort.</p>
+
+        <p>A grooming routine should match the pet’s current needs instead of following the same plan for life. Regular care can help keep the coat manageable and the pet comfortable. At <strong><a href="https://www.rialtogrooming.com/" target="_blank" rel="noopener">Rialto Grooming</a></strong>, age related needs can guide the grooming process so pets receive suitable care at every stage. A thoughtful plan can make grooming safer, calmer, and more comfortable as pets grow older.</p>
+
+      </div>
+    </article>
+
+    <!-- ===== BUSINESS INFO + GOOGLE MAP ===== -->
+    <section class="business-section">
+      <h2 class="business-section-title">Find Us on Google Map</h2>
+      <div class="business-grid">
+
+        <!-- Info Card -->
+        <div class="info-card">
+          <h3>Rialto Grooming</h3>
+
+          <div class="info-item">
+            <span class="info-icon">&#128205;</span>
+            <span>513 W Foothill Blvd, Rialto, CA 92376, United States</span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">&#128222;</span>
+            <span><a href="tel:+19097675861">(909) 767-5861</a></span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">&#9993;</span>
+            <span><a href="mailto:ffhm83@yahoo.com">ffhm83@yahoo.com</a></span>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icon">&#127760;</span>
+            <span><a href="https://www.rialtogrooming.com/" target="_blank" rel="noopener">https://www.rialtogrooming.com/</a></span>
+          </div>
+        </div>
+
+        <!-- Map Card -->
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.0210575657075!2d-117.37952779999999!3d34.106273400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34d30f1e47051%3A0x3b8d7a5e00b99f!2sRialto%20Grooming!5e1!3m2!1sen!2s!4v1790871160258!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-logo">
+        <img src="https://www.rialtogrooming.com/assets/logo-B3O563xG.webp" alt="Rialto Grooming">
+      </div>
+
+      <p class="footer-text">
+        Rialto Grooming &mdash; 513 W Foothill Blvd, Rialto, CA 92376, United States<br>
+        Phone: <a href="tel:+19097675861">(909) 767-5861</a> &nbsp;|&nbsp;
+        Email: <a href="mailto:ffhm83@yahoo.com">ffhm83@yahoo.com</a><br>
+        Website: <a href="https://www.rialtogrooming.com/" target="_blank" rel="noopener">www.rialtogrooming.com</a>
+      </p>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-copy">&copy; 2025 Rialto Grooming. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
